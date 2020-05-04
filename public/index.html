@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Fipugram</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but instaclone doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <div id="app"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-storage.js"></script>
+  
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDUhYdvOjMBv3ceBIH8IbTpZw2ZrzNgbzA",
+        authDomain: "instaclone-777db.firebaseapp.com",
+        databaseURL: "https://instaclone-777db.firebaseio.com",
+        projectId: "instaclone-777db",
+        storageBucket: "instaclone-777db.appspot.com",
+        messagingSenderId: "30714864374",
+        appId: "1:30714864374:web:b6dc7635c456cb991002d7",
+        measurementId: "G-4T1GZK59RS"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      var db = firebase.firestore();
+      var storage = firebase.storage();
+    </script>
+
+</body>
+</html>

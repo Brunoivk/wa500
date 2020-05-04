@@ -1,1 +1,1 @@
-# wa500
+Front-end kod za Web aplikacije
